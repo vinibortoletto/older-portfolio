@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --c-dGreen: #1b201f;
+  --c-mGreen: #077558;
+  --c-lGreen: #00ba89;
+  --c-gold: #cbb28b;
+  --c-grey: #3b5249;
+
+  /* Font sizes */
+  --fz-sm: #1b201f;
+
+  /* Font families */
+  --ff-regular: "Montserrat", sans-serif;
+  --ff-special: "Comfortaa", cursive;
+}
