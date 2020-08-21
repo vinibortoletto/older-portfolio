@@ -14,12 +14,22 @@ export const GlobalStyles = styled.createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 2rem 1rem;
 
     font-family: var(--ff-regular);
     line-height: 1.3;
 
     color: var(--c-gold);
     background-color: var(--c-dGreen);
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+
+    padding: 0;
   }
 `;
