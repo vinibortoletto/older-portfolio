@@ -7,12 +7,12 @@ import Hero from "./Hero";
 import Info from "./Info";
 import Works from "./Works";
 
-function Main() {
+function Main({ lang }) {
   return (
     <>
-      <Hero />
-      <Info />
-      <Works />
+      <Hero lang={lang} />
+      <Info lang={lang} />
+      <Works lang={lang} />
     </>
   );
 }

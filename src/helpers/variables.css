@@ -12,4 +12,9 @@
   /* Font families */
   --ff-regular: "Montserrat", sans-serif;
   --ff-special: "Comfortaa", cursive;
+
+  /* Margins */
+  --m-sm: 1rem;
+  --m-md: 3rem;
+  --m-bg: 5rem;
 }

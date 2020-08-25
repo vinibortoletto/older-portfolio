@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  border: 2px solid var(--c-mGreen);
+  border: 2px solid var(--c-lGreen);
   border-radius: 100rem;
   padding: 0.5rem 1rem;
-  color: var(--c-mGreen);
+  color: var(--c-lGreen);
   transition: 0.1s ease-in-out;
 
   span {
@@ -12,7 +12,7 @@ export const Container = styled.button`
   }
 
   &:hover {
-    background-color: var(--c-mGreen);
+    background-color: var(--c-lGreen);
     color: var(--c-dGreen);
   }
 `;

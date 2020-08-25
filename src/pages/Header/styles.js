@@ -4,6 +4,7 @@ export const Container = styled.header`
   height: 2.5rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: var(--m-md);
 
   .btns-wrapper {
     display: flex;
