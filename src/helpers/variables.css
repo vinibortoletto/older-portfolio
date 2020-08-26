@@ -7,14 +7,15 @@
   --c-grey: #3b5249;
 
   /* Font sizes */
-  --fz-sm: #1b201f;
+  --fz-sm: 14px;
+  --fz-normal: 16px;
 
   /* Font families */
   --ff-regular: "Montserrat", sans-serif;
   --ff-special: "Comfortaa", cursive;
 
   /* Margins */
-  --m-sm: 1rem;
+  --m-sm: 1.5rem;
   --m-md: 3rem;
   --m-bg: 5rem;
 }

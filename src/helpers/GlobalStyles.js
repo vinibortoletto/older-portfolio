@@ -32,4 +32,13 @@ export const GlobalStyles = styled.createGlobalStyle`
 
     padding: 0;
   }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
 `;

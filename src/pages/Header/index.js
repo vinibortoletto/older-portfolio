@@ -46,11 +46,9 @@ function Header({ lang, setLang }) {
 
         <div className="btns-wrapper">
           {/* Download button */}
-          <Button
-            className="btn-download"
-            icon="file-download"
-            text="Baixar currículo"
-          />
+          <div className="btn-download">
+            <Button icon="file-download" text="Baixar currículo" />
+          </div>
 
           {/* Flags buttons */}
           <div onClick={handleLangBtn} className="btns-flag">
@@ -84,11 +82,9 @@ function Header({ lang, setLang }) {
 
         <div className="btns-wrapper">
           {/* Download button */}
-          <Button
-            className="btn-download"
-            icon="file-download"
-            text="Download CV"
-          />
+          <div className="btn-download">
+            <Button icon="file-download" text="Download CV" />
+          </div>
 
           {/* Flags buttons */}
           <div onClick={handleLangBtn} className="btns-flag">

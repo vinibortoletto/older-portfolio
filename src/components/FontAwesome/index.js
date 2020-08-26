@@ -4,13 +4,16 @@ import {
   faEnvelope,
   faGlobeAmericas,
   faCalendarDay,
+  faDesktop,
 } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
   faFileDownload,
   faEnvelope,
   faWhatsapp,
   faGlobeAmericas,
-  faCalendarDay
+  faCalendarDay,
+  faDesktop,
+  faGithub
 );
