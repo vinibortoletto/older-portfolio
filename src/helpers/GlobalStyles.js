@@ -14,7 +14,7 @@ export const GlobalStyles = styled.createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
 
     font-family: var(--ff-regular);
     line-height: 1.3;
@@ -39,6 +39,12 @@ export const GlobalStyles = styled.createGlobalStyle`
   }
 
   p {
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
   }
 `;

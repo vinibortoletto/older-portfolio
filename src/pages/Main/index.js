@@ -3,13 +3,13 @@ import React from "react";
 // Components
 import Hero from "./Hero";
 import Info from "./Info";
-import Works from "./Works";
+import Projects from "./Projects";
 
 function Main({ lang }) {
   return (
     <>
       <Hero lang={lang} />
-      <Works lang={lang} />
+      <Projects lang={lang} />
       <Info lang={lang} />
     </>
   );

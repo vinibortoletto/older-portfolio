@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  justify-items: center;
+  margin-bottom: var(--m-bg);
 
   .avatar img {
     width: 7rem;
+    margin: auto;
+    display: block;
   }
 
   .title {
@@ -30,8 +31,6 @@ export const Container = styled.div`
     margin-bottom: var(--m-bg);
 
     ul {
-      list-style-type: none;
-      padding: 0;
       text-align: center;
     }
 
@@ -47,13 +46,10 @@ export const Container = styled.div`
 
   .drawing img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 
   .shape img {
     margin: -6px -1rem;
     width: calc(100% + 2rem);
-    margin-bottom: var(--m-bg);
   }
 `;

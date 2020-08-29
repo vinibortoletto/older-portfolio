@@ -6,7 +6,12 @@ import {
   faCalendarDay,
   faDesktop,
 } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faGithub,
+  faGithubSquare,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
   faFileDownload,
@@ -15,5 +20,7 @@ library.add(
   faGlobeAmericas,
   faCalendarDay,
   faDesktop,
-  faGithub
+  faGithub,
+  faGithubSquare,
+  faLinkedin
 );

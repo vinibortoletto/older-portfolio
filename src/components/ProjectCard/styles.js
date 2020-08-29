@@ -3,18 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
+  margin-bottom: var(--m-sm);
 
   display: grid;
   align-items: center;
 
-  border-radius: 0.2rem;
-  border: 1px solid var(--c-dGreen);
-
-  cursor: pointer;
+  border-left: 3px solid var(--c-mGreen);
 
   &:hover {
-    border: 1px solid var(--c-lGreen);
+    height: 15rem;
 
     .logo {
       transform: translate(-50%, -100%);
@@ -22,7 +20,8 @@ export const Container = styled.div`
     }
 
     .bg .shadow {
-      opacity: 0.9;
+      opacity: 0.95;
+      height: 15rem;
     }
 
     .content {
@@ -36,11 +35,14 @@ export const Container = styled.div`
     top: 50%;
     left: 50%;
 
+    height: 3rem;
+
     transform: translate(-50%, -50%);
   }
 
   .text {
     font-size: var(--fz-sm);
+    text-align: center;
   }
 
   .line {
@@ -50,8 +52,19 @@ export const Container = styled.div`
     background-color: var(--c-lGreen);
   }
 
-  .btns a:first-child {
-    margin-right: 0.5rem;
+  .btns {
+    a:first-child {
+      /* margin-right: 0.5rem; */
+    }
+
+    a {
+    }
+
+    button {
+      display: block;
+      width: 10rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
   .bg,
@@ -71,8 +84,8 @@ export const Container = styled.div`
       top: 0;
       left: 0;
 
-      background-color: var(--c-dGreen);
-      opacity: 0.3;
+      background-color: var(--c-drGreen);
+      opacity: 0.5;
     }
 
     img {
@@ -86,6 +99,8 @@ export const Container = styled.div`
 
     opacity: 0;
     pointer-events: none;
+
+    padding: 1rem 2rem;
   }
 
   /* Add transition to animated elements */

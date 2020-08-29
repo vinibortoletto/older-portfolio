@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import avatar from "../../../images/avatar.svg";
-import drawing from "../../../images/drawing.svg";
-import shape from "../../../images/shape-top.svg";
+import avatar from "../../../images/illustrations/avatar.svg";
+import drawing from "../../../images/illustrations/drawing.svg";
+import shape from "../../../images/illustrations/shape-top-mobile.svg";
 
 import { Container } from "./styles";
 
