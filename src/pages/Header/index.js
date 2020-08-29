@@ -20,6 +20,15 @@ function Header({ lang, setLang }) {
       ? btnsContainer.classList.remove("show")
       : btnsContainer.classList.add("show");
 
+    // Hide lang buttons
+    function hideLangBtns() {
+      btnsContainer.classList.remove("show");
+      document.removeEventListener("click", hideLangBtns);
+    }
+
+    btnsContainer.classList.contains("show") &&
+      document.addEventListener("click", hideLangBtns);
+
     // Change language
     const btnHidden = document.querySelector(".btns-flag .hidden");
 
@@ -39,18 +48,17 @@ function Header({ lang, setLang }) {
   function brContent() {
     return (
       <>
-        {/* Logo */}
         <a className="logo" href="https://vinicius-bortoletto.github.io">
           <img src={logo} alt="logo de vinicius bortoletto" />
         </a>
 
         <div className="btns-wrapper">
-          {/* Download button */}
-          <div className="btn-download">
-            <Button icon="file-download" text="Baixar currículo" />
-          </div>
+          <Button
+            className="btn-download"
+            icon="file-download"
+            text="Baixar currículo"
+          />
 
-          {/* Flags buttons */}
           <div onClick={handleLangBtn} className="btns-flag">
             <button className="visible">
               {lang === "en" ? (
@@ -59,6 +67,7 @@ function Header({ lang, setLang }) {
                 <img src={brFlag} alt="bandeira do brasil" />
               )}
             </button>
+
             <button className="hidden">
               {lang === "en" ? (
                 <img src={brFlag} alt="bandeira do brasil" />
@@ -75,18 +84,17 @@ function Header({ lang, setLang }) {
   function enContent() {
     return (
       <>
-        {/* Logo */}
         <a className="logo" href="https://vinicius-bortoletto.github.io">
           <img src={logo} alt="vinicius bortoletto's logo" />
         </a>
 
         <div className="btns-wrapper">
-          {/* Download button */}
-          <div className="btn-download">
-            <Button icon="file-download" text="Download CV" />
-          </div>
+          <Button
+            className="btn-download"
+            icon="file-download"
+            text="Download CV"
+          />
 
-          {/* Flags buttons */}
           <div onClick={handleLangBtn} className="btns-flag">
             <button className="visible">
               {lang === "en" ? (
@@ -95,6 +103,7 @@ function Header({ lang, setLang }) {
                 <img src={brFlag} alt="brazil's flag" />
               )}
             </button>
+
             <button className="hidden">
               {lang === "en" ? (
                 <img src={brFlag} alt="brazil's flag" />

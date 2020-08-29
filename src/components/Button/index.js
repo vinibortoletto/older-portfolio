@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Container } from "./styles";
 
-function Button({ icon, text }) {
+function Button({ className, icon, text }) {
   return (
-    <Container>
+    <Container className={className}>
       <FontAwesomeIcon icon={icon} />
       <span>{text}</span>
     </Container>

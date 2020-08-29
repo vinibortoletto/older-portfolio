@@ -14,31 +14,23 @@ import { Container } from "./styles";
 function Footer() {
   return (
     <Container>
-      <div className="logo">
-        <img src={logo} alt="vinicius bortoletto's logo" />
-      </div>
+      <img className="logo" src={logo} alt="vinicius bortoletto's logo" />
 
-      <div className="social-icons">
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={["fab", "github-square"]} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon="envelope" />
-          </li>
-        </ul>
-      </div>
+      <ul className="social-icons">
+        <li>
+          <FontAwesomeIcon icon={["fab", "github-square"]} />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+        </li>
+        <li>
+          <FontAwesomeIcon icon="envelope" />
+        </li>
+      </ul>
 
-      <div className="download">
-        <Button icon="file-download" text="Download CV" />
-      </div>
+      <Button className="download" icon="file-download" text="Download CV" />
 
-      <div className="copyright">
-        <p>Created and designed by Vinicius Bortoletto</p>
-      </div>
+      <p className="copyright">Created and designed by Vinicius Bortoletto</p>
 
       <img src={shape} alt="abstract shape" className="shape" />
     </Container>

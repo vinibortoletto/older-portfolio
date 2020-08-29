@@ -4,17 +4,14 @@ export const Container = styled.footer`
   display: grid;
   justify-items: center;
 
-  .logo img {
+  .logo {
     width: 10rem;
     margin-bottom: 2.5rem;
   }
 
   .social-icons {
     margin-bottom: 1.5rem;
-
-    ul {
-      display: flex;
-    }
+    display: flex;
 
     li {
       margin-right: 1.5rem;
@@ -42,7 +39,6 @@ export const Container = styled.footer`
   }
 
   .shape {
-    /* width: 100%; */
     margin: -6px -1rem;
     width: calc(100% + 2rem);
   }
