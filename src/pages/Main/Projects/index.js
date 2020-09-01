@@ -27,16 +27,6 @@ import ProjectCard from "../../../components/ProjectCard";
 import { Container } from "./styles";
 
 function Projects({ lang }) {
-  const dataBr = [
-    {
-      logo: logo2,
-      bg: bg2,
-      text: "Empresa do ramo de fretamento, transporte coletivo e rodoviário",
-      website: "https://viacao-trevisan.netlify.app/",
-      github: "https://github.com/vinicius-bortoletto/viacao-trevisan",
-    },
-  ];
-
   const dataEn = [
     {
       logo: logo1,
@@ -48,8 +38,7 @@ function Projects({ lang }) {
     {
       logo: logo2,
       bg: bg2,
-      text:
-        "Logistics and transportation solutions for public and road transport ",
+      text: "Logistics and solutions for public and road transportation ",
       website: "https://viacao-trevisan.netlify.app/",
       github: "https://github.com/vinicius-bortoletto/viacao-trevisan",
     },
@@ -78,6 +67,51 @@ function Projects({ lang }) {
       logo: logo6,
       bg: bg6,
       text: "Digital fantasy artist bringing ideas to life",
+      website: "https://ilustrador-digital.netlify.app/",
+      github: "https://github.com/vinicius-bortoletto/ilustrador-digital",
+    },
+  ];
+
+  const dataBr = [
+    {
+      logo: logo1,
+      bg: bg1,
+      text: "Melhor qualidade em rações, acessórios e cuidados para animais",
+      website: "https://marinho-agropecuaria.netlify.app/",
+      github: "https://github.com/vinicius-bortoletto/marinho-agropecuaria",
+    },
+    {
+      logo: logo2,
+      bg: bg2,
+      text: "Logística e soluções para transportes públicos e rodoviários ",
+      website: "https://viacao-trevisan.netlify.app/",
+      github: "https://github.com/vinicius-bortoletto/viacao-trevisan",
+    },
+    {
+      logo: logo3,
+      bg: bg3,
+      text: "Roupas minimalistas e sustentáveis",
+      website: "https://simplesmente.netlify.app/produtos.html",
+      github: "https://github.com/vinicius-bortoletto/simples-mente",
+    },
+    {
+      logo: logo4,
+      bg: bg4,
+      text: "Serviçoes de assistênte pessoal e ajuda exclusiva",
+      website: "https://vital-ajuda.netlify.app/",
+      github: "https://github.com/vinicius-bortoletto/vital-ajuda",
+    },
+    {
+      logo: logo5,
+      bg: bg5,
+      text: "Criador e desenvedor front-end",
+      website: "https://neo-dev.netlify.app/",
+      github: "https://github.com/vinicius-bortoletto/neo",
+    },
+    {
+      logo: logo6,
+      bg: bg6,
+      text: "Ilustrador digital dando vida a ideias",
       website: "https://ilustrador-digital.netlify.app/",
       github: "https://github.com/vinicius-bortoletto/ilustrador-digital",
     },

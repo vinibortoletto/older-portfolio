@@ -47,4 +47,8 @@ export const GlobalStyles = styled.createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+
+  section {
+    margin-bottom: var(--m-bg);
+  }
 `;
