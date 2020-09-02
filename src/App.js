@@ -7,6 +7,8 @@ import Header from "./pages/Header";
 import Main from "./pages/Main";
 import Footer from "./pages/Footer";
 
+import StarsBg from "./components/StarsBg";
+
 // Styles
 import { GlobalStyles } from "./helpers/GlobalStyles";
 import "./helpers/variables.css";
@@ -23,6 +25,8 @@ function App() {
   return (
     <>
       <GlobalStyles />
+
+      <StarsBg />
 
       <Header lang={lang} setLang={setLang} />
       <Main lang={lang} />
