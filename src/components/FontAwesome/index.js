@@ -11,6 +11,7 @@ import {
   faGithub,
   faGithubSquare,
   faLinkedin,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -22,5 +23,6 @@ library.add(
   faDesktop,
   faGithub,
   faGithubSquare,
-  faLinkedin
+  faLinkedin,
+  faLinkedinIn
 );

@@ -45,79 +45,79 @@ function Header({ lang, setLang }) {
     });
   }
 
-  function brContent() {
-    return (
-      <>
-        <a className="logo" href="https://vinicius-bortoletto.github.io">
-          <img src={logo} alt="logo de vinicius bortoletto" />
-        </a>
+  const enContent = (
+    <>
+      <a className="logo" href="https://vinicius-bortoletto.github.io">
+        <img src={logo} alt="vinicius bortoletto's logo" />
+      </a>
 
-        <div className="btns-wrapper">
-          <Button
-            className="btn-download"
-            icon="file-download"
-            text="Baixar currículo"
-          />
-
-          <div onClick={handleLangBtn} className="btns-flag">
-            <button className="visible">
-              {lang === "en" ? (
-                <img src={enFlag} alt="bandeira do reino unido" />
-              ) : (
-                <img src={brFlag} alt="bandeira do brasil" />
-              )}
-            </button>
-
-            <button className="hidden">
-              {lang === "en" ? (
-                <img src={brFlag} alt="bandeira do brasil" />
-              ) : (
-                <img src={enFlag} alt="bandeira do reino unido" />
-              )}
-            </button>
-          </div>
-        </div>
-      </>
-    );
-  }
-
-  function enContent() {
-    return (
-      <>
-        <a className="logo" href="https://vinicius-bortoletto.github.io">
-          <img src={logo} alt="vinicius bortoletto's logo" />
-        </a>
-
-        <div className="btns-wrapper">
+      <div className="btns-wrapper">
+        <a href="https://drive.google.com/file/d/1UFHyAIut0QmllnFgYEtg8c127FM5eLfa/view?usp=sharing">
           <Button
             className="btn-download"
             icon="file-download"
             text="Download CV"
           />
+        </a>
 
-          <div onClick={handleLangBtn} className="btns-flag">
-            <button className="visible">
-              {lang === "en" ? (
-                <img src={enFlag} alt="united kingdom's flag" />
-              ) : (
-                <img src={brFlag} alt="brazil's flag" />
-              )}
-            </button>
+        <div onClick={handleLangBtn} className="btns-flag">
+          <button className="visible">
+            {lang === "en" ? (
+              <img src={enFlag} alt="united kingdom's flag" />
+            ) : (
+              <img src={brFlag} alt="brazil's flag" />
+            )}
+          </button>
 
-            <button className="hidden">
-              {lang === "en" ? (
-                <img src={brFlag} alt="brazil's flag" />
-              ) : (
-                <img src={enFlag} alt="united kingdom's flag" />
-              )}
-            </button>
-          </div>
+          <button className="hidden">
+            {lang === "en" ? (
+              <img src={brFlag} alt="brazil's flag" />
+            ) : (
+              <img src={enFlag} alt="united kingdom's flag" />
+            )}
+          </button>
         </div>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
 
-  return <Container>{lang === "en" ? enContent() : brContent()}</Container>;
+  const brContent = (
+    <>
+      <a className="logo" href="https://vinicius-bortoletto.github.io">
+        <img src={logo} alt="logo de vinicius bortoletto" />
+      </a>
+
+      <div className="btns-wrapper">
+        <a href="https://drive.google.com/file/d/1UFHyAIut0QmllnFgYEtg8c127FM5eLfa/view?usp=sharing">
+          <Button
+            className="btn-download"
+            icon="file-download"
+            text="Baixar currículo"
+          />
+        </a>
+
+        <div onClick={handleLangBtn} className="btns-flag">
+          <button className="visible">
+            {lang === "en" ? (
+              <img src={enFlag} alt="bandeira do reino unido" />
+            ) : (
+              <img src={brFlag} alt="bandeira do brasil" />
+            )}
+          </button>
+
+          <button className="hidden">
+            {lang === "en" ? (
+              <img src={brFlag} alt="bandeira do brasil" />
+            ) : (
+              <img src={enFlag} alt="bandeira do reino unido" />
+            )}
+          </button>
+        </div>
+      </div>
+    </>
+  );
+
+  return <Container>{lang === "en" ? enContent : brContent}</Container>;
 }
 
 export default Header;

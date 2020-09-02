@@ -18,17 +18,25 @@ function Footer() {
 
       <ul className="social-icons">
         <li>
-          <FontAwesomeIcon icon={["fab", "github-square"]} />
+          <a href="https://github.com/vinicius-bortoletto/">
+            <FontAwesomeIcon icon={["fab", "github"]} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          <a href="https://www.linkedin.com/in/vinicius-bortoletto/">
+            <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon="envelope" />
+          <a href="mailto:ovinibortoletto@gmail.com?subject=website contact">
+            <FontAwesomeIcon icon="envelope" />
+          </a>
         </li>
       </ul>
 
-      <Button className="download" icon="file-download" text="Download CV" />
+      <a href="https://drive.google.com/file/d/1UFHyAIut0QmllnFgYEtg8c127FM5eLfa/view?usp=sharing">
+        <Button className="download" icon="file-download" text="Download CV" />
+      </a>
 
       <p className="copyright">Created and designed by Vinicius Bortoletto</p>
 

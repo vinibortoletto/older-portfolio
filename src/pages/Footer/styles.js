@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   display: grid;
   justify-items: center;
+  /* position: relative; */
 
   .logo {
     width: 10rem;
@@ -28,14 +29,14 @@ export const Container = styled.footer`
   }
 
   .download {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .copyright {
     color: var(--c-lGreen);
     font-size: var(--fz-sm);
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
   }
 
   .shape {
