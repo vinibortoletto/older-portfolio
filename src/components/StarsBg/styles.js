@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 function createStars(numOfStars) {
-  let value = `${Math.floor(Math.random() * 4000)}px ${Math.floor(
-    Math.random() * 4000
+  let value = `${Math.floor(Math.random() * 3000)}px ${Math.floor(
+    Math.random() * 3000
   )}px var(--c-mGreen)`;
 
   for (let i = 2; i <= numOfStars; i++) {
-    value = `${value}, ${Math.floor(Math.random() * 4000)}px ${Math.floor(
-      Math.random() * 4000
+    value = `${value}, ${Math.floor(Math.random() * 3000)}px ${Math.floor(
+      Math.random() * 3000
     )}px var(--c-mGreen)`;
   }
 
@@ -30,7 +30,7 @@ export const Container = styled.div`
   .stars-1:after {
     content: "";
     position: absolute;
-    top: 4000px;
+    top: 3000px;
     width: 1px;
     height: 1px;
     border-radius: 100px;
@@ -50,7 +50,7 @@ export const Container = styled.div`
   .stars-2:after {
     content: "";
     position: absolute;
-    top: 4000px;
+    top: 3000px;
     width: 2px;
     height: 2px;
     border-radius: 100px;
@@ -70,7 +70,7 @@ export const Container = styled.div`
   .stars-3:after {
     content: "";
     position: absolute;
-    top: 4000px;
+    top: 3000px;
     width: 3px;
     height: 3px;
     border-radius: 100px;
@@ -83,7 +83,7 @@ export const Container = styled.div`
       transform: translateY(0px);
     }
     to {
-      transform: translateY(-4000px);
+      transform: translateY(-3000px);
     }
   }
 `;
