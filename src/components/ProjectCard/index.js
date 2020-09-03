@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../Button";
 import { Container } from "./styles";
 
-function ProjectCard({ logo, bg, text, website, github }) {
-  return (
-    <Container>
-      <img src={logo} alt="logo" className="logo" />
+function ProjectCard({ lang, logo, bg, text, website, github }) {
+  const enContent = (
+    <>
+      <img src={logo} alt="vinicius bortoletto's logo" className="logo" />
 
       <div className="content">
         <p className="text">{text}</p>
@@ -26,10 +26,38 @@ function ProjectCard({ logo, bg, text, website, github }) {
 
       <div className="bg">
         <div className="shadow"></div>
-        <img src={bg} alt="alt" />
+        <img src={bg} alt="abstract shape" />
       </div>
-    </Container>
+    </>
   );
+
+  const brContent = (
+    <>
+      <img src={logo} alt="logo de vinicius bortoletto" className="logo" />
+
+      <div className="content">
+        <p className="text">{text}</p>
+
+        <div className="line"></div>
+
+        <div className="btns">
+          <a href={website}>
+            <Button icon="desktop" text="Visitar website" />
+          </a>
+          <a href={github}>
+            <Button icon={["fab", "github"]} text="Visitar github" />
+          </a>
+        </div>
+      </div>
+
+      <div className="bg">
+        <div className="shadow"></div>
+        <img src={bg} alt="abstract shape" />
+      </div>
+    </>
+  );
+
+  return <Container>{lang === "en" ? enContent : brContent}</Container>;
 }
 
 export default ProjectCard;

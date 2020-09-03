@@ -6,7 +6,7 @@ import { Container } from "./styles";
 function Skills({ lang }) {
   const enContent = (
     <>
-      <Title text="habilities" />
+      <Title text="skills" />
 
       <div>
         <h2>languages</h2>
@@ -15,7 +15,7 @@ function Skills({ lang }) {
           <span className="css">
             CSS3 (SASS, LESS, TailwindCSS, Bulma, BEM)
           </span>
-          , <span className="js">JavaScript (ES6, React.js)</span>.
+          and <span className="js">JavaScript (ES6, React.js)</span>.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ function Skills({ lang }) {
 
       <div>
         <h2>speaking languages</h2>
-        <p>Portuguese (native), English (fluent) e French (intermediate).</p>
+        <p>Portuguese (native), English (fluent) and French (intermediate).</p>
       </div>
     </>
   );
@@ -45,7 +45,7 @@ function Skills({ lang }) {
           <span className="css">
             CSS3 (SASS, LESS, TailwindCSS, Bulma, BEM)
           </span>
-          , <span className="js">JavaScript (ES6, React.js)</span>.
+          e <span className="js">JavaScript (ES6, React.js)</span>.
         </p>
       </div>
 

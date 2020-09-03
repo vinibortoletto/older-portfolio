@@ -130,6 +130,7 @@ function Projects({ lang }) {
               text={item.text}
               website={item.website}
               github={item.github}
+              lang={lang}
             />
           ))
         : dataBr.map((item, index) => (
@@ -140,6 +141,7 @@ function Projects({ lang }) {
               text={item.text}
               website={item.website}
               github={item.github}
+              lang={lang}
             />
           ))}
     </Container>
