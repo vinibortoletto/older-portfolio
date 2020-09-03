@@ -43,4 +43,11 @@ export const Container = styled.footer`
     margin: -6px -1rem;
     width: calc(100% + 2rem);
   }
+
+  @media only screen and (min-width: 600px) {
+    .shape {
+      margin: -6px -2rem;
+      width: calc(100% + 4rem);
+    }
+  }
 `;

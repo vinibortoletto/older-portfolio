@@ -11,7 +11,7 @@ export const Container = styled.header`
   }
 
   .btn-download {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 
   .btns-flag,
@@ -53,5 +53,9 @@ export const Container = styled.header`
         z-index: 0;
       }
     }
+  }
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: var(--m-bg);
   }
 `;

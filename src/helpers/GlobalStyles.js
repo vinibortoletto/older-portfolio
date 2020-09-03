@@ -14,7 +14,7 @@ export const GlobalStyles = styled.createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 5vw 0 5vw;
 
     font-family: var(--ff-regular);
     line-height: 1.3;
@@ -50,5 +50,12 @@ export const GlobalStyles = styled.createGlobalStyle`
 
   section {
     margin-bottom: var(--m-bg);
+  }
+
+  @media only screen and (min-width: 900px) {
+    body {
+      padding-right: 10vw;
+      padding-left: 10vw;
+    }
   }
 `;

@@ -1,23 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import avatar from "../../../images/illustrations/avatar.svg";
 import drawing from "../../../images/illustrations/drawing.svg";
-import shape from "../../../images/illustrations/shape-top-mobile.svg";
+import shapeMobile from "../../../images/illustrations/shape-top-mobile.svg";
+import shapeDesktop from "../../../images/illustrations/shape-top-desktop.svg";
 
 import { Container } from "./styles";
 
 function Hero({ lang }) {
-  function brContent() {
-    return (
-      <>
-        <div className="avatar">
-          <img src={avatar} alt="avatar de vinicius bortoleto" />
-        </div>
+  const [shape, setShape] = useState(shapeMobile);
+
+  const brContent = (
+    <>
+      <div className="hero-wrapper">
+        <img
+          className="avatar"
+          src={avatar}
+          alt="avatar de vinicius bortoletto"
+        />
 
         <div>
           <div className="title">
-            <h1>vinicius bortoletto</h1>
+            <h1>vini.bortoletto</h1>
             <h2>desenvolvedor front-end</h2>
           </div>
 
@@ -41,29 +46,32 @@ function Hero({ lang }) {
               </li>
             </ul>
           </div>
-
-          <div className="drawing">
-            <img src={drawing} alt="desenho sobre desenvolvimento web" />
-          </div>
-
-          <div className="shape">
-            <img src={shape} alt="uma forma abstrata" />
-          </div>
         </div>
-      </>
-    );
-  }
+      </div>
 
-  function enContent() {
-    return (
-      <>
-        <div className="avatar">
-          <img src={avatar} alt="vinicius bortoleto's avatar" />
-        </div>
+      <div className="drawing-wrapper">
+        <img
+          className="drawing"
+          src={drawing}
+          alt="ilustração sobre desenvolvimento web"
+        />
+        <img className="shape" src={shape} alt="forma abstrata" />
+      </div>
+    </>
+  );
+
+  const enContent = (
+    <>
+      <div className="hero-wrapper">
+        <img
+          className="avatar"
+          src={avatar}
+          alt="vinicius bortoletto's avatar"
+        />
 
         <div>
           <div className="title">
-            <h1>vinicius bortoletto</h1>
+            <h1>vini.bortoletto</h1>
             <h2>front-end developer</h2>
           </div>
 
@@ -87,20 +95,32 @@ function Hero({ lang }) {
               </li>
             </ul>
           </div>
-
-          <div className="drawing">
-            <img src={drawing} alt="web development line drawing" />
-          </div>
-
-          <div className="shape">
-            <img src={shape} alt="abstract shape" />
-          </div>
         </div>
-      </>
-    );
-  }
+      </div>
 
-  return <Container>{lang === "en" ? enContent() : brContent()}</Container>;
+      <div className="drawing-wrapper">
+        <img
+          className="drawing"
+          src={drawing}
+          alt="web development line drawing"
+        />
+        <img className="shape" src={shape} alt="abstract shape" />
+      </div>
+    </>
+  );
+
+  // Changes shape (mobile or desktop)
+  useEffect(() => {
+    // Checks width on load
+    window.innerWidth >= 800 && setShape(shapeDesktop);
+
+    // Checks width on resize
+    window.onresize = () => {
+      window.innerWidth >= 800 ? setShape(shapeDesktop) : setShape(shapeMobile);
+    };
+  }, []);
+
+  return <Container>{lang === "en" ? enContent : brContent}</Container>;
 }
 
 export default Hero;

@@ -7,11 +7,11 @@ import Projects from "./Projects";
 
 function Main({ lang }) {
   return (
-    <>
+    <main>
       <Hero lang={lang} />
       <Projects lang={lang} />
       <Info lang={lang} />
-    </>
+    </main>
   );
 }
 
