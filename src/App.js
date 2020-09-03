@@ -15,6 +15,12 @@ import "./helpers/variables.css";
 
 function App() {
   const [lang, setLang] = useState("en");
+  const cv = {
+    br:
+      "https://drive.google.com/file/d/1L_878YqIofWhSj588TwqZAMsZZ9YbpqH/view?usp=sharing",
+    en:
+      "https://drive.google.com/file/d/1C77_MIy7eGY2lGzqtdvSbV5LHmQvH1C8/view?usp=sharing",
+  };
 
   // Get lang from localStorage OR set default lang
   useEffect(() => {
@@ -28,9 +34,9 @@ function App() {
 
       <StarsBg />
 
-      <Header lang={lang} setLang={setLang} />
+      <Header lang={lang} setLang={setLang} cv={cv} />
       <Main lang={lang} />
-      <Footer lang={lang} />
+      <Footer lang={lang} cv={cv} />
     </>
   );
 }

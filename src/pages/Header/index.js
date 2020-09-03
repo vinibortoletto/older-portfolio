@@ -11,7 +11,7 @@ import Button from "../../components/Button";
 // Styles
 import { Container } from "./styles";
 
-function Header({ lang, setLang }) {
+function Header({ lang, setLang, cv }) {
   function handleLangBtn() {
     // Show lang buttons
     const btnsContainer = document.querySelector(".btns-flag");
@@ -52,7 +52,7 @@ function Header({ lang, setLang }) {
       </a>
 
       <div className="btns-wrapper">
-        <a href="https://drive.google.com/file/d/1UFHyAIut0QmllnFgYEtg8c127FM5eLfa/view?usp=sharing">
+        <a href={cv.en}>
           <Button
             className="btn-download"
             icon="file-download"
@@ -88,7 +88,7 @@ function Header({ lang, setLang }) {
       </a>
 
       <div className="btns-wrapper">
-        <a href="https://drive.google.com/file/d/1UFHyAIut0QmllnFgYEtg8c127FM5eLfa/view?usp=sharing">
+        <a href={cv.br}>
           <Button
             className="btn-download"
             icon="file-download"
