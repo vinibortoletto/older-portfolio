@@ -17,9 +17,9 @@ function App() {
   const [lang, setLang] = useState("en");
   const cv = {
     br:
-      "https://drive.google.com/file/d/1L_878YqIofWhSj588TwqZAMsZZ9YbpqH/view?usp=sharing",
+      "https://drive.google.com/file/d/10FlPbt4wcZJVsy9r8qxemCuEKT33MUVE/view?usp=sharing",
     en:
-      "https://drive.google.com/file/d/1C77_MIy7eGY2lGzqtdvSbV5LHmQvH1C8/view?usp=sharing",
+      "https://drive.google.com/file/d/1zvTKXPydZnZAwMFVkRKlbZpgUdeHyoKi/view?usp=sharing",
   };
 
   // Get lang from localStorage OR set default lang
