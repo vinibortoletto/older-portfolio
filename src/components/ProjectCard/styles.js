@@ -12,7 +12,7 @@ export const Container = styled.div`
   border-left: 3px solid var(--c-mGreen);
 
   &:hover {
-    height: 15rem;
+    height: 10rem;
 
     .logo {
       transform: translate(-50%, -100%);
@@ -21,7 +21,7 @@ export const Container = styled.div`
 
     .bg .shadow {
       opacity: 0.95;
-      height: 15rem;
+      height: 10rem;
     }
 
     .content {
@@ -42,24 +42,17 @@ export const Container = styled.div`
 
   .text {
     font-size: var(--fz-sm);
-    text-align: center;
   }
 
   .line {
-    width: 5rem;
-    height: 1px;
+    height: 5rem;
+    width: 1px;
     margin: var(--m-sm) 0;
     background-color: var(--c-lGreen);
+    opacity: 0.3;
   }
 
   .btns {
-    a:first-child {
-      /* margin-right: 0.5rem; */
-    }
-
-    a {
-    }
-
     button {
       display: block;
       width: 10rem;
@@ -94,13 +87,18 @@ export const Container = styled.div`
   }
 
   .content {
+    max-width: 30rem;
+    padding: 1rem 2rem;
+
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
     justify-items: center;
+    justify-self: center;
+    align-items: center;
 
     opacity: 0;
     pointer-events: none;
-
-    padding: 1rem 2rem;
   }
 
   /* Add transition to animated elements */
