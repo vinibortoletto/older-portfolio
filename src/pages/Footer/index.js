@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Images
 import logo from "../../images/icons/logo.svg";
-import shape from "../../images/illustrations/shape-bottom-mobile.svg";
+import shapeMobile from "../../images/illustrations/shape-bottom-mobile.svg";
+import shapeDesktop from "../../images/illustrations/shape-bottom-desktop.svg";
 
 // Components
 import Button from "../../components/Button";
@@ -12,6 +13,8 @@ import Button from "../../components/Button";
 import { Container } from "./styles";
 
 function Footer({ lang, cv }) {
+  const [shape, setShape] = useState(shapeMobile);
+
   const enContent = (
     <>
       <img className="logo" src={logo} alt="vinicius bortoletto's logo" />
@@ -78,6 +81,17 @@ function Footer({ lang, cv }) {
       <img src={shape} alt="forma abstrata" className="shape" />
     </>
   );
+
+  // Changes shape (mobile or desktop)
+  useEffect(() => {
+    // Checks width on load
+    window.innerWidth >= 800 && setShape(shapeDesktop);
+
+    // Checks width on resize
+    window.onresize = () => {
+      window.innerWidth >= 800 ? setShape(shapeDesktop) : setShape(shapeMobile);
+    };
+  }, []);
 
   return <Container>{lang === "en" ? enContent : brContent}</Container>;
 }

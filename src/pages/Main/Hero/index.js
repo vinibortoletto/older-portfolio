@@ -49,7 +49,7 @@ function Hero({ lang }) {
         </div>
       </div>
 
-      <div className="drawing-wrapper">
+      <div className="illustrations">
         <img
           className="drawing"
           src={drawing}
@@ -98,7 +98,7 @@ function Hero({ lang }) {
         </div>
       </div>
 
-      <div className="drawing-wrapper">
+      <div className="illustrations">
         <img
           className="drawing"
           src={drawing}

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 function createStars(numOfStars) {
-  let value = `${Math.floor(Math.random() * 3000)}px ${Math.floor(
-    Math.random() * 3000
+  let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(
+    Math.random() * 2000
   )}px var(--c-mGreen)`;
 
   for (let i = 2; i <= numOfStars; i++) {
-    value = `${value}, ${Math.floor(Math.random() * 3000)}px ${Math.floor(
-      Math.random() * 3000
+    value = `${value}, ${Math.floor(Math.random() * 2000)}px ${Math.floor(
+      Math.random() * 2000
     )}px var(--c-mGreen)`;
   }
 
@@ -23,14 +23,14 @@ export const Container = styled.div`
     height: 1px;
     border-radius: 100px;
     background: transparent;
-    animation: animStar 200s linear infinite;
+    animation: animStar 150s linear infinite;
     box-shadow: ${createStars(700)};
   }
 
   .stars-1:after {
     content: "";
     position: absolute;
-    top: 3000px;
+    top: 2000px;
     width: 1px;
     height: 1px;
     border-radius: 100px;
@@ -43,14 +43,14 @@ export const Container = styled.div`
     height: 2px;
     border-radius: 100px;
     background: transparent;
-    animation: animStar 250s linear infinite;
+    animation: animStar 200s linear infinite;
     box-shadow: ${createStars(400)};
   }
 
   .stars-2:after {
     content: "";
     position: absolute;
-    top: 3000px;
+    top: 2000px;
     width: 2px;
     height: 2px;
     border-radius: 100px;
@@ -63,14 +63,14 @@ export const Container = styled.div`
     height: 3px;
     border-radius: 100px;
     background: transparent;
-    animation: animStar 300s linear infinite;
+    animation: animStar 250s linear infinite;
     box-shadow: ${createStars(200)};
   }
 
   .stars-3:after {
     content: "";
     position: absolute;
-    top: 3000px;
+    top: 2000px;
     width: 3px;
     height: 3px;
     border-radius: 100px;
@@ -83,7 +83,7 @@ export const Container = styled.div`
       transform: translateY(0px);
     }
     to {
-      transform: translateY(-3000px);
+      transform: translateY(-2000px);
     }
   }
 `;

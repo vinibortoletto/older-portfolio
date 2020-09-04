@@ -53,13 +53,15 @@ export const Container = styled.section`
     width: calc(100% + 10vw);
   }
 
-  @media only screen and (min-width: 900px) {
-    margin-bottom: 32rem;
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 43vw;
 
     .hero-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      padding: 0 5vw;
     }
 
     .avatar {
@@ -98,7 +100,7 @@ export const Container = styled.section`
       }
     }
 
-    .drawing-wrapper {
+    .illustrations {
       position: absolute;
       left: 0;
       right: 0;

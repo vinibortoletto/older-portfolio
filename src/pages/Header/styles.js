@@ -57,5 +57,9 @@ export const Container = styled.header`
 
   @media only screen and (min-width: 800px) {
     margin-bottom: var(--m-bg);
+
+    height: 3rem;
+    .logo {
+    }
   }
 `;

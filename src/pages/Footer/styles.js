@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.footer`
   display: grid;
   justify-items: center;
-  /* position: relative; */
 
   .logo {
     width: 10rem;
@@ -40,14 +39,14 @@ export const Container = styled.footer`
   }
 
   .shape {
-    margin: -6px -1rem;
-    width: calc(100% + 2rem);
+    margin: -6px -5vw;
+    width: calc(100% + 10vw);
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 800px) {
     .shape {
-      margin: -6px -2rem;
-      width: calc(100% + 4rem);
+      margin: -6px -10vw;
+      width: calc(100% + 20vw);
     }
   }
 `;

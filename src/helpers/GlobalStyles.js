@@ -48,11 +48,7 @@ export const GlobalStyles = styled.createGlobalStyle`
     margin: 0;
   }
 
-  section {
-    margin-bottom: var(--m-bg);
-  }
-
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 800px) {
     body {
       padding-right: 10vw;
       padding-left: 10vw;

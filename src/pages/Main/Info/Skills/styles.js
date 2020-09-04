@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   padding: 0 1rem;
+  margin-bottom: var(--m-bg);
 
   h2 {
     color: var(--c-grey);
@@ -16,10 +17,6 @@ export const Container = styled.section`
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  p {
-    text-align: justify;
   }
 
   .html:hover {
