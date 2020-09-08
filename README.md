@@ -1,12 +1,10 @@
-<h1 align="center">
-    <img width="180px" alt="vinicius bortoletto's logo" src="https://i.imgur.com/O7y08wo.png" />
-    <br>
-    vini.bortoletto
-</h1>
-
 <h4 align="center">
+  <img width="180px" alt="vinicius bortoletto's logo" src="https://i.imgur.com/O7y08wo.png" />
+  <br /><br />
   Vinicius Bortoletto's Programming Portfolio 
 </h4>
+
+<hr />
 
 <p align="center">
     <img alt="website mockup" src="https://i.imgur.com/0AK5nlr.png" />    
