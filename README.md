@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="vinicius bortoletto's logo" src="https://i.imgur.com/O7y08wo.png" />
+    <img width="180px" alt="vinicius bortoletto's logo" src="https://i.imgur.com/O7y08wo.png" />
     <br>
     vini.bortoletto
 </h1>
