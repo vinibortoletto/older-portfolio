@@ -9,7 +9,7 @@
 </h4>
 
 <p align="center">
-    <img alt="website mockup" src="https://i.imgur.com/n0Qquli.png" />    
+    <img alt="website mockup" src="https://i.imgur.com/0AK5nlr.png" />    
 </p>
 
 <p align="center">
