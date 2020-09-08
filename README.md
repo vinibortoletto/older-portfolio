@@ -9,6 +9,10 @@
 </h4>
 
 <p align="center">
+    <img alt="website mockup" src="https://i.imgur.com/n0Qquli.png" />    
+</p>
+
+<p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://vinibortoletto.github.io/portfolio/">Visit app page</a>
