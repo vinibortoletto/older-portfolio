@@ -21,54 +21,69 @@ function Footer({ lang, cv }) {
 
       <ul className="social-icons">
         <li>
-          <a href="https://github.com/vinicius-bortoletto/">
+          <a href="https://github.com/vinibortoletto/" target="_blank">
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/vinicius-bortoletto/">
+          <a
+            href="https://www.linkedin.com/in/vinicius-bortoletto/"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
           </a>
         </li>
         <li>
-          <a href="mailto:ovinibortoletto@gmail.com?subject=website contact">
+          <a
+            href="mailto:ovinibortoletto@gmail.com?subject=website contact"
+            target="_blank"
+          >
             <FontAwesomeIcon icon="envelope" />
           </a>
         </li>
       </ul>
 
-      <a href={cv.en}>
+      <a href={cv.en} target="_blank">
         <Button className="download" icon="file-download" text="Download CV" />
       </a>
 
-      <p className="copyright">Created and designed by Vinicius Bortoletto</p>
+      <p className="copyright">
+        Created and designed by <b>Vini Bortoletto</b>
+      </p>
 
       <img src={shape} alt="abstract shape" className="shape" />
     </>
   );
+
   const brContent = (
     <>
       <img className="logo" src={logo} alt="logo de vinicius bortoletto" />
 
       <ul className="social-icons">
         <li>
-          <a href="https://github.com/vinicius-bortoletto/">
+          <a href="https://github.com/vinibortoletto/" target="_blank">
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/vinicius-bortoletto/">
+          <a
+            href="https://www.linkedin.com/in/vinicius-bortoletto/"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
           </a>
         </li>
         <li>
-          <a href="mailto:ovinibortoletto@gmail.com?subject=website contact">
+          <a
+            href="mailto:ovinibortoletto@gmail.com?subject=website contact"
+            target="_blank"
+          >
             <FontAwesomeIcon icon="envelope" />
           </a>
         </li>
       </ul>
 
-      <a href={cv.br}>
+      <a href={cv.br} target="_blank">
         <Button
           className="download"
           icon="file-download"

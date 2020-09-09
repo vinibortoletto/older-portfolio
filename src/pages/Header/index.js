@@ -47,12 +47,16 @@ function Header({ lang, setLang, cv }) {
 
   const enContent = (
     <>
-      <a className="logo" href="https://vinicius-bortoletto.github.io">
+      <a
+        className="logo"
+        href="https://vinibortoletto.github.io/portfolio"
+        target="_blank"
+      >
         <img src={logo} alt="vinicius bortoletto's logo" />
       </a>
 
       <div className="btns-wrapper">
-        <a href={cv.en}>
+        <a href={cv.en} target="_blank">
           <Button
             className="btn-download"
             icon="file-download"
@@ -83,12 +87,16 @@ function Header({ lang, setLang, cv }) {
 
   const brContent = (
     <>
-      <a className="logo" href="https://vinicius-bortoletto.github.io">
+      <a
+        className="logo"
+        href="https://vinibortoletto.github.io/portfolio"
+        target="_blank"
+      >
         <img src={logo} alt="logo de vinicius bortoletto" />
       </a>
 
       <div className="btns-wrapper">
-        <a href={cv.br}>
+        <a href={cv.br} target="_blank">
           <Button
             className="btn-download"
             icon="file-download"

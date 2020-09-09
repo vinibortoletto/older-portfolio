@@ -40,13 +40,13 @@ function Projects({ lang }) {
       bg: bg2,
       text: "Logistics and solutions for public and road transportation ",
       website: "https://viacao-trevisan.netlify.app/",
-      github: "https://github.com/vinibortoletto/viacao-trevisan",
+      github: "https://github.com/vinibortoletto/ui-clone-viacao-trevisan",
     },
     {
       logo: logo3,
       bg: bg3,
       text: "Sustainable and minimalist clothing",
-      website: "https://simplesmente.netlify.app/produtos.html",
+      website: "https://simplesmente.netlify.app/",
       github: "https://github.com/vinibortoletto/simples-mente",
     },
     {

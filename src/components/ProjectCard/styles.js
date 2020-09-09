@@ -17,6 +17,7 @@ export const Container = styled.div`
     .logo {
       transform: translate(-50%, -100%);
       opacity: 0;
+      pointer-events: none;
     }
 
     .bg .shadow {
@@ -38,6 +39,7 @@ export const Container = styled.div`
     height: 3rem;
 
     transform: translate(-50%, -50%);
+    pointer-events: all;
   }
 
   .text {

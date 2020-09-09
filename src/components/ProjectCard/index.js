@@ -15,10 +15,11 @@ function ProjectCard({ lang, logo, bg, text, website, github }) {
         <div className="line"></div>
 
         <div className="btns">
-          <a href={website}>
+          <a href={website} target="_blank">
             <Button icon="desktop" text="Visit website" />
           </a>
-          <a href={github}>
+
+          <a href={github} target="_blank">
             <Button icon={["fab", "github"]} text="Visit github" />
           </a>
         </div>
@@ -41,10 +42,10 @@ function ProjectCard({ lang, logo, bg, text, website, github }) {
         <div className="line"></div>
 
         <div className="btns">
-          <a href={website}>
+          <a href={website} target="_blank">
             <Button icon="desktop" text="Visitar website" />
           </a>
-          <a href={github}>
+          <a href={github} target="_blank">
             <Button icon={["fab", "github"]} text="Visitar github" />
           </a>
         </div>
