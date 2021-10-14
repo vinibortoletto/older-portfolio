@@ -63,7 +63,6 @@ export const Container = styled.div`
   }
 
   .bg,
-  .bg .shadow,
   .bg img {
     width: inherit;
     height: inherit;
@@ -75,6 +74,8 @@ export const Container = styled.div`
     z-index: -1;
 
     .shadow {
+      width: 100%;
+      height: 8rem;
       position: absolute;
       top: 0;
       left: 0;

@@ -1,6 +1,6 @@
 {
-  "homepage": "http://vinibortoletto.github.io/portfolio",
-  "name": "new-portfolio",
+  "homepage": "http://vinibortoletto.github.io/",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
