@@ -32,7 +32,7 @@ function Projects({ lang }) {
       logo: logo1,
       bg: bg1,
       text: "Best quality pet food, acessories and health care",
-      website: "https://marinho-agropecuaria.netlify.app/",
+      website: "https://marinho.netlify.app/",
       github: "https://github.com/vinibortoletto/marinho-agropecuaria",
     },
     {
@@ -77,7 +77,7 @@ function Projects({ lang }) {
       logo: logo1,
       bg: bg1,
       text: "Melhor qualidade em rações, acessórios e cuidados para animais",
-      website: "https://marinho-agropecuaria.netlify.app/",
+      website: "https://marinho.netlify.app/",
       github: "https://github.com/vinibortoletto/marinho-agropecuaria",
     },
     {
